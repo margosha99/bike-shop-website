@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" /> 
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Implement UI Autocomplete plugin using jQuery UI</title>
+</head>
+<body>
+        
+            <form class="registration-form" id="registration-form" >
+                <h2>Create account</h2>
+                <div class="form-field">
+                    <label for="name" class="reg-label">Name</label>
+                    <input type="text" class="reg-input" id="name" placeholder="Enter your name">  
+                    <small class="error-message" id="error"></small>  
+                </div>
+                
+                <div class="form-field">
+                    <label for="email" class="reg-label">Email</label>
+                    <input type="email" id="email" class="reg-input"  placeholder="Enter your email">     
+                    <small class="error-message" id="error"></small>  
+                </div>
+            
+                <div class="form-field">
+                    <label for="password" class="reg-label">Password</label>
+                    <input type="password" id="password" class="reg-input"  placeholder="Create password"> 
+                    <small class="error-message" id="error"></small>     
+                </div>
+                
+                <div class="form-field">
+                    <label for="repass" class="reg-label">Confirm password</label>
+                    <input type="password" id="repass" class="reg-input"  placeholder="Confirm your password">
+                    <small class="error-message" id="error"></small>      
+                </div>
+                
+                <button id='signup'>Sign up</button>
+                
+                <div class="signup-divider">
+                    <hr>
+                    or
+                    <hr>
+                </div>
+                
+                <fb:login-button class="fb-login-button" 
+                data-size="large" data-button-type="continue_with" 
+                data-layout="default" data-auto-logout-link="false" 
+                data-use-continue-as="false" data-width="" scope="public_profile,email" onlogin="checkLoginState();">
+                </fb:login-button>
+                
+                <div id="status">
+                </div>  
+            </form>
+     
+
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0&appId=743663706234587&autoLogAppEvents=1" nonce="DxBmQsMU"></script>
+
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/themes/ui-lightness/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="script.js"></script>    
+        <script src="carousel.js"></script>
+        <script src="login.js"></script>    
+    </body>
+</html>

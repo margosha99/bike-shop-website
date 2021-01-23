@@ -1,0 +1,284 @@
+.checkout-info {
+  padding: 0px 10px;
+}
+
+.checkout-form > h3 {
+  font-size: 23px;
+  color: #3f3f3f;
+  font-weight: 700;
+  text-align: center;
+}
+.checkout-form > p {
+  font-size: 20px;
+  color: #3f3f3f;
+  font-weight: 500;
+}
+.checkout-form__model {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.checkout-form__model > label {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #3f3f3f;
+  font-weight: 500;
+}
+.checkout-form__model > select {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+.checkout-form__model > textarea {
+  width: 100%;
+  padding: 10px 15px;
+}
+.checkout-form__billing-address {
+  display: flex;
+  flex-wrap: wrap;
+}
+.checkout-form__billing-address__item {
+  display: flex;
+  flex-direction: column;
+}
+.checkout-form__billing-address__item > input, .checkout-form__billing-address__item select {
+  padding: 10px 10px;
+}
+.checkout-form__billing-address__item:nth-child(3) {
+  width: 100%;
+}
+.checkout-form__billing-address__item:not(:nth-child(3)) {
+  flex: 1;
+}
+.checkout-form__billing-address__item:nth-child(1), .checkout-form__billing-address :nth-child(4), .checkout-form__billing-address :nth-child(6) {
+  margin-right: 0px;
+}
+.checkout-form__billing-address__item.error input {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #cc0033;
+  border-top: 1px solid #8b8b8b;
+  border-right: 1px solid #8b8b8b;
+  border-left: 1px solid #8b8b8b;
+}
+.checkout-form__billing-address__item.success input {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #cc0033;
+  border-top: 1px solid #8b8b8b;
+  border-right: 1px solid #8b8b8b;
+  border-left: 1px solid #8b8b8b;
+  border-bottom: 2px solid #28a745;
+}
+.checkout-form__delivery-address {
+  display: flex;
+  flex-wrap: wrap;
+}
+.checkout-form__delivery-address__item {
+  display: flex;
+  flex-direction: column;
+}
+.checkout-form__delivery-address__item > input, .checkout-form__delivery-address__item select {
+  padding: 10px 10px;
+}
+.checkout-form__delivery-address__item:nth-child(3) {
+  width: 100%;
+}
+.checkout-form__delivery-address__item:not(:nth-child(3)) {
+  flex: 1;
+}
+.checkout-form__delivery-address__item:nth-child(1), .checkout-form__delivery-address :nth-child(4), .checkout-form__delivery-address :nth-child(6) {
+  margin-right: 0px;
+}
+.checkout-form__delivery-address__item.error input {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #cc0033;
+  border-top: 1px solid #8b8b8b;
+  border-right: 1px solid #8b8b8b;
+  border-left: 1px solid #8b8b8b;
+}
+.checkout-form__delivery-address__item.success input {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #cc0033;
+  border-top: 1px solid #8b8b8b;
+  border-right: 1px solid #8b8b8b;
+  border-left: 1px solid #8b8b8b;
+  border-bottom: 2px solid #28a745;
+}
+.checkout-form__delivery-check {
+  margin: 10px 0 10px 0;
+}
+.checkout-form__delivery-check > label {
+  font-size: 18px;
+}
+.checkout-form__delivery-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.checkout-form__delivery-date :nth-child(1) {
+  flex: 1;
+}
+.checkout-form__delivery-date :nth-child(2) {
+  flex: 1;
+}
+.checkout-form__delivery-date :nth-child(3) {
+  flex: 1;
+}
+.checkout-form__delivery-date select {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+.checkout-form__payment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.checkout-form__payment__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.checkout-form__payment__item > label {
+  margin-left: 5px;
+}
+.checkout-form__payment__item > label > img {
+  width: 80px;
+}
+.checkout-form__card-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+.checkout-form__card-info__item {
+  display: flex;
+  flex-direction: column;
+}
+.checkout-form__card-info__item > input {
+  padding: 10px 10px;
+}
+.checkout-form__card-info__item:nth-child(2) {
+  margin-right: 20px;
+}
+.checkout-form__card-info__item:not(:first-child) {
+  flex: 1;
+}
+.checkout-form__card-info__item:nth-child(1) {
+  width: 100%;
+}
+.checkout-form__card-info__item.error input {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #cc0033;
+  border-top: 1px solid #8b8b8b;
+  border-right: 1px solid #8b8b8b;
+  border-left: 1px solid #8b8b8b;
+}
+.checkout-form__card-info__item.success input {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #cc0033;
+  border-top: 1px solid #8b8b8b;
+  border-right: 1px solid #8b8b8b;
+  border-left: 1px solid #8b8b8b;
+  border-bottom: 2px solid #28a745;
+}
+.checkout-form .checkout {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ee881a;
+  color: #ee881a;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.checkout-form .checkout:hover {
+  color: #fff;
+  background-color: #ff931d;
+  transition: background-color 0.5s ease-in;
+}
+
+.create-account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+.create-account > h3 {
+  text-align: center;
+}
+.create-account__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.create-account__item > label {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.create-account__item > input {
+  padding: 10px 10px;
+}
+.create-account__item.error input {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #cc0033;
+  border-top: 1px solid #8b8b8b;
+  border-right: 1px solid #8b8b8b;
+  border-left: 1px solid #8b8b8b;
+}
+.create-account__item.success input {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #cc0033;
+  border-top: 1px solid #8b8b8b;
+  border-right: 1px solid #8b8b8b;
+  border-left: 1px solid #8b8b8b;
+  border-bottom: 2px solid #28a745;
+}
+.create-account > button {
+  background-color: #fff;
+  border: 1px solid #ee881a;
+  color: #ee881a;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+}
+.create-account > button:hover {
+  color: #fff;
+  background-color: #ff931d;
+  transition: background-color 0.5s ease-in;
+}
+
+.error-message {
+  color: #dc3545;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: inline;
+}
+
+@media screen and (min-width: 767px) {
+  .checkout-form__billing-address__item:nth-child(5), .checkout-form__billing-address :nth-child(1), .checkout-form__billing-address :nth-child(4), .checkout-form__delivery-address__item:nth-child(5), .checkout-form__delivery-address :nth-child(1), .checkout-form__delivery-address :nth-child(4) {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .checkout-form__billing-address__item:nth-child(1), .checkout-form__billing-address :nth-child(4), .checkout-form__billing-address :nth-child(5), .checkout-form__delivery-address__item:nth-child(1), .checkout-form__delivery-address :nth-child(4), .checkout-form__delivery-address :nth-child(5) {
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkout-info {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 25px;
+  }
+}

@@ -1,0 +1,283 @@
+@mixin error-input {
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #cc0033;
+    border-top: 1px solid rgb(139, 139, 139);
+    border-right: 1px solid rgb(139, 139, 139);
+    border-left: 1px solid rgb(139, 139, 139);
+}
+@mixin success-input {
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #cc0033;
+    border-top: 1px solid rgb(139, 139, 139);
+    border-right: 1px solid rgb(139, 139, 139);
+    border-left: 1px solid rgb(139, 139, 139);
+    border-bottom: 2px solid #28a745;
+}
+
+.checkout-info{
+    padding: 0px 10px;
+}
+.checkout-form{
+    >h3{
+        font-size: 23px;
+        color: rgb(63, 63, 63);
+        font-weight: 700;
+        text-align: center;
+    }
+    >p{
+        font-size: 20px;
+        color: rgb(63, 63, 63);
+        font-weight: 500;
+    }
+
+    &__model{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        >label{
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: rgb(63, 63, 63);
+            font-weight: 500;
+        }
+        >select{
+            width: 100%;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+        }
+        >textarea{
+            width: 100%;
+            padding: 10px 15px;
+        }
+    }
+
+    &__billing-address{
+        display: flex;
+        flex-wrap: wrap;
+
+        &__item{
+            display: flex;
+            flex-direction: column;
+            >input,select{
+                padding: 10px 10px;
+            }
+        }
+        &__item:nth-child(3){
+            width: 100%;
+        }
+        &__item:not(:nth-child(3)){
+            flex: 1;
+        }
+        &__item:nth-child(1), :nth-child(4), :nth-child(6){
+            margin-right: 0px;
+        }
+        &__item.error input{
+            @include error-input();
+        }
+        &__item.success input{
+            @include success-input();
+        }
+
+    }
+
+    &__delivery-address{
+        display: flex;
+        flex-wrap: wrap;
+        &__item{
+            display: flex;
+            flex-direction: column;
+            >input,select{
+                padding: 10px 10px;
+            }
+        }
+        &__item:nth-child(3){
+            width: 100%;
+        }
+        &__item:not(:nth-child(3)){
+            flex: 1;
+        }
+        &__item:nth-child(1), :nth-child(4), :nth-child(6){
+            margin-right: 0px;
+        }
+        &__item.error input{
+            @include error-input();
+        }
+        &__item.success input{
+            @include success-input();
+        }
+    }
+
+    &__delivery-check{
+        margin: 10px 0 10px 0;
+        >label{
+            font-size: 18px;
+        }
+    }
+
+    &__delivery-date{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        :nth-child(1){
+            flex:1;
+        }
+        :nth-child(2){
+            flex:1;
+        }
+        :nth-child(3){
+            flex: 1;
+        }
+        select{
+            padding: 10px 20px;
+            margin-bottom: 10px;
+        }
+      
+    }
+
+   &__payment{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+        flex-wrap: wrap;
+        &__item{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            >label{
+                margin-left: 5px;
+                >img{
+                    width:80px;
+                }
+            }
+        } 
+    }
+
+    &__card-info{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0;
+        
+        &__item{
+            display: flex;
+            flex-direction: column;
+            >input{
+                padding: 10px 10px;
+            }
+        }
+        &__item:nth-child(2){
+            margin-right: 20px;
+        }
+        &__item:not(:first-child) {
+            flex: 1;
+        }
+        &__item:nth-child(1) {
+            width: 100%;
+        }
+        &__item.error input{
+            @include error-input();
+        }
+        &__item.success input{
+            @include success-input();
+        }
+    }
+
+    .checkout{
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #ee881a;
+        color: #ee881a;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        border-radius: 25px;
+        cursor: pointer;
+        &:hover{
+            color: #fff;
+            background-color: #ff931d;;
+            transition: background-color .5s ease-in;
+        }
+    }
+}
+ 
+.create-account{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    >h3{
+        text-align: center;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        >label{
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        >input{
+            padding: 10px 10px;
+        }
+    }
+    &__item.error input{
+        @include error-input();
+    }
+    &__item.success input{
+        @include success-input();
+    }
+    
+
+    >button{
+        background-color: #fff;
+        border: 1px solid #ee881a;
+        color: #ee881a;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        border-radius: 25px;
+        cursor: pointer;
+        width: 100%;
+        &:hover{
+            color: #fff;
+            background-color: #ff931d;;
+            transition: background-color .5s ease-in;
+        }
+    }
+}
+.error-message{
+    color:  #dc3545;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: inline;
+}
+
+
+@media screen and (min-width: 767px){
+    .checkout-form{
+        &__billing-address, &__delivery-address{
+            &__item:nth-child(5), :nth-child(1), :nth-child(4){
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    .checkout-form{
+        &__billing-address, &__delivery-address{
+            &__item:nth-child(1), :nth-child(4), :nth-child(5){
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .checkout-info{
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 25px ;
+    }
+}

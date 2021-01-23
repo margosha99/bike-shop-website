@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./login/login.css">
+    <link rel="stylesheet" href="./checkout/checkout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Implement UI Autocomplete plugin using jQuery UI</title>
+</head>
+<body>
+        <header class="site-header">
+            <a href="#" class="site-header__logo">
+                <img src="img/logo.png"  alt="site logo">
+            </a>
+            <div class="site-header__contact">
+                <a href="#" class="contact__contact-telephone"><i class="zmdi zmdi-smartphone-iphone"></i>+487 333 777 999</a>
+                <a href="#" class="contact__contact-email"><i class="zmdi zmdi-email"></i>example@mail.com</a>
+            </div>
+            <ul class="site-header__tools">
+                <li class="site-header__tools-item"><a href="checkout.html" class="order-form"><i class="zmdi zmdi-shopping-basket zmdi-hc-2x"></i></a></li>
+                <li class="site-header__tools-item"><a href="#"><i class="zmdi zmdi-account zmdi-hc-2x"></i></a></li>
+                <li class="site-header__tools-item"><a href="login.html" class="sign-up">Sign up<i class="zmdi zmdi-sign-in "></i></a></li>
+            </ul>
+        </header>
+
+        <nav class="site-nav">
+            <a href="index.html" class="site-nav__link">Home</a>
+            <a href="about.html" class="site-nav__link">About Us</a>
+            <a href="contact.html" class="site-nav__link">Contact Us</a>
+        </nav>
+
+        <main class="site-main">
+            <section class="product-carosuel">
+                <div class="slider">
+                    <a href="#" class="slider__next" data-nav="next">&#10095;</a>
+                    <a href="#" class="slider__prev" data-nav="prev">&#10094;</a>
+
+                    <ul class="product-list">
+                        <li  class="product-list__item">
+                            <a href="#" class="product-list__link">
+                                <div class="product-list__info">
+                                    <img src="img/item1.jpg" alt="item1">
+                                    <span class="product-list__sale">-20%</span>    
+                                </div>
+                                <h3 class="product-list__name">Mafiabikes Madmain 20” BMX Bike | Purple Splatter 2020</h3>
+                                <span class="product-list__brand">Mafiabikes</span>
+                                <div class="product-list__price">
+                                    <span class="product-list__new-price ">$299</span>
+                                    <span class="product-list__old-price ">$399</span>
+                                </div>
+                                <button class="product-list__button"> <i class="zmdi zmdi-shopping-cart"></i> add to cart</button>
+                                </a>
+                        </li>
+                        <li  class="product-list__item">
+                            <a href="#" class="product-list__link">
+                                <div class="product-list__info">
+                                    <img src="img/item2.jpg" alt="item1">
+                                    <span class="product-list__sale">-20%</span>    
+                                </div>
+                                <h3 class="product-list__name">Mafiabikes Madmain 20” BMX Bike | Purple Splatter 2020</h3>
+                                <span class="product-list__brand">Mafiabikes</span>
+                                <div class="product-list__price">
+                                    <span class="product-list__new-price ">$299</span>
+                                    <span class="product-list__old-price ">$399</span>
+                                </div>
+                                <button class="product-list__button"> <i class="zmdi zmdi-shopping-cart"></i> add to cart</button>
+                            </a>
+                        </li>
+                        <li class="product-list__item">
+                            <a href="#"  class="product-list__link">
+                                <div class="product-list__info">
+                                    <img src="img/item3.jpg" alt="item1">
+                                    <span class="product-list__sale">-20%</span>    
+                                </div>
+                                <h3 class="product-list__name">Mafiabikes Madmain 20” BMX Bike | Purple Splatter 2020</h3>
+                                <span class="product-list__brand">Mafiabikes</span>
+                                <div class="product-list__price">
+                                    <span class="product-list__new-price ">$299</span>
+                                    <span class="product-list__old-price ">$399</span>
+                                </div>
+                                <button class="product-list__button"> <i class="zmdi zmdi-shopping-cart"></i> add to cart</button>
+                            </a>                     
+                            </li>
+                    </ul>
+                </div>
+            </section>
+        
+        </main>
+
+        <aside class="site-aside">
+            <div class="search-form ui-widget">
+                <label for="tags" class="search-form__label">Brands:</label>
+                <input id="tags" class="search-form__input">
+                <button class="search-form__button">Search</button>
+            </div>
+            <div class="calendar">
+                Date: <div id="datepicker-inline" class="calendar__item"></div>            </div>
+            
+        </aside>
+
+        <footer class="site-footer">
+            <div class="site-footer_copyright copyright">  &copy;2020 Copyright </div>
+        </footer>
+   
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/themes/ui-lightness/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="script.js"></script>    
+        <script src="carousel.js"></script>
+</body>
+</html>
