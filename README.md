@@ -17,5 +17,5 @@ you filled (after validation approval)
 * Facebook SDK for JavaScript
 
 ## Demo
-
+https://margosha99.github.io/bike-shop-website/
 
